@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .wrapper {
+                display: flex;
+                font-family: Arial;
+                width: 400px;
+                column-gap: 10px;
+            }
+
+            .client-pfp {
+                height: 40px;
+                width: auto;
+                border-radius: 50px;
+            }
+
+            .post-wrapper {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+            }
+
+            .profile-info {
+                display: flex;
+            }
+
+            .profile-name {
+                font-weight: bold;
+                margin-right: 5px;
+            }
+
+            .profile-mention {
+                color: gray;
+            }
+
+            .content-link {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(200, 200, 200);
+                border-radius: 15px;
+                overflow: hidden;
+            }
+
+            .link-pic {
+                width: 100px;
+                height: 100px;
+                background-color:rgb(220, 220, 220);;
+                margin-right: 10px;
+            }
+
+            .link-url {
+                color: rgb(111, 111, 111);
+                margin-bottom: 3px;
+            }
+
+            .link-desc {
+                line-height: 22px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <img class="client-pfp" src="img2.jpg" alt="">
+            <div class="post-wrapper">
+                <div class="profile-info">
+                    <div class="profile-name">supersimple.dev</div>
+                    <div class="profile-mention">@SuperSimpleDev</div>
+                </div>
+                <div>What is backend web development? A complete overview. New video is up!</div>
+                <div class="content-link">
+                    <div class="link-pic"></div>
+                    <div style="flex: 1"> <!-- flex: 1 so the info takes the space it wants -->
+                        <div class="link-url">youtube.com</div>
+                        <div class="link-desc">Backend web development - a complete overview (2021)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .wrapper {
+                display: grid;
+                grid-template-columns: 170px 170px 170px;
+                column-gap: 15px;
+            }
+
+            img { 
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+                object-position: bottom;
+            }
+
+            button, .mutual-text, .name {
+                font-family: arial;
+                margin: 7px
+            }
+
+            .name {
+                font-weight: bold;
+            }
+
+            .card {
+                width: 170px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+            }
+
+            .mutual-text {
+                font-size: 14px;
+                color: rgb(100, 100, 100);
+            }
+
+            button {
+                background-color: rgb(68, 98, 231);
+                border: none;
+                color: white;
+                padding: 7px 15px;
+                border-radius: 5px;
+            }
+
+            .mutual-pic {
+                border-radius: 50px;
+                width: 30px;
+                height: 30px;
+            }
+            
+            .mutual {
+                padding-left: 5px;
+                display: grid;
+                grid-template-columns: 30px 1fr;
+                align-items: center;
+                column-gap: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="card">
+                <img src="img.png" alt="cat">
+                <div class="name">Oliver</div>
+                <div class="mutual">
+                    <img class="mutual-pic" src="img2.jpg" alt="">
+                    <div class="mutual-text">2 mutual friends</div>
+                </div>
+                <button>Add Friend</button>
+            </div>
+            <div class="card">
+                <img src="img2.jpg" alt="cat">
+                <div class="name">Carla</div>
+                <div class="mutual">
+                    <img class="mutual-pic" src="img.png" alt="">
+                    <div class="mutual-text">15 mutual friends</div>
+                </div>
+                <button>Add Friend</button>
+            </div>
+            <div class="card">
+                <img src="img3.jpg" alt="cat">
+                <div class="name">Enrico</div>
+                <div class="mutual">
+                    <img class="mutual-pic" src="img2.jpg" alt="">
+                    <div class="mutual-text">New to Facebook</div>
+                </div>
+                <button>Add Friend</button>
+            </div>
+        </div>
+    </body>
+</html>

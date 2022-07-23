@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .wrapper {
+                display: flex;
+                height: 50px;
+            }
+
+            .flex1 {
+                width: 100px;
+                background-color: lightblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .flex2 {
+                width: 200px;
+                background-color: lightcoral;
+            }
+
+            .wrapper2 {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="flex1"></div>
+            <div class="flex2">
+                <div>row1</div>
+                <div class="wrapper2">
+                    <div style="background-color: black; color: white">row2</div>
+                    <div style="background-color: black; color: white">row2</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

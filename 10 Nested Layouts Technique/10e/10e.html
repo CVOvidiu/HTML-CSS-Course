@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img { 
+                width: 170px;
+                height: 170px;
+                object-fit: cover;
+                object-position: bottom;
+            }
+
+            p, button {
+                font-family: arial;
+                margin: 7px
+            }
+
+            .name {
+                font-weight: bold;
+            }
+
+            .card {
+                margin: 0px 3px;
+                display: inline-block;
+                width: 170px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+            }
+
+            .mutual-text {
+                padding-left: 3px;
+                vertical-align: middle;
+                display: inline-block;
+                margin: 0;
+                font-size: 14px;
+                color: rgb(100, 100, 100);
+            }
+
+            button {
+                background-color: rgb(68, 98, 231);
+                border: none;
+                color: white;
+                padding: 7px 15px;
+                border-radius: 5px;
+            }
+
+            .mutual-pic {
+                background-color: gray;
+                vertical-align: middle;
+                border-radius: 50px;
+                width: 30px;
+                height: 30px;
+            }
+            
+            .mutual {
+                padding-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <img src="img.png" alt="cat">
+            <p class="name">Oliver</p>
+            <div class="mutual">
+                <img class="mutual-pic" src="img2.jpg" alt="">
+                <p class="mutual-text">2 mutual friends</p>
+            </div>
+            <button>Add Friend</button>
+        </div>
+        <div class="card">
+            <img src="img2.jpg" alt="cat">
+            <p class="name">Carla</p>
+            <div class="mutual">
+                <img class="mutual-pic" src="img.png" alt="">
+                <p class="mutual-text">15 mutual friends</p>
+            </div>
+            <button>Add Friend</button>
+        </div>
+        <div class="card">
+            <img src="img3.jpg" alt="cat">
+            <p class="name">Enrico</p>
+            <div class="mutual">
+                <img class="mutual-pic" src="img2.jpg" alt="">
+                <p class="mutual-text">New to Facebook</p>
+            </div>
+            <button>Add Friend</button>
+        </div>
+    </body>
+</html>

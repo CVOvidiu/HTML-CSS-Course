@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                height: 45px;
+                width: 45px;
+                object-fit: cover;
+                border-radius: 30px;
+            }
+
+            .sidebar-1 {
+                padding-top: 20px;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 65px;
+                background-color: rgb(30, 30, 30);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 5px;
+            }
+
+            .sidebar-2 {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 65px;
+                width: 150px;
+                background-color: rgb(60, 60, 60);
+            } 
+
+            .category {
+                font-family: Roboto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 10px 0px 15px;
+            }
+
+            .categ-title {
+                color: white;
+                font-size: 13px;
+            }
+
+            .button {
+                font-size: 20px;
+                color: gray;
+            }
+
+            .categ-channels {
+                display: flex;
+                flex-direction: column;
+                font-family: Roboto;
+                color: gray;
+                row-gap: 10px;
+                margin-left: 15px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div class="sidebar-1">
+            <img src="img.png" alt="">
+            <img src="img2.jpg" alt="">
+            <img src="img3.jpg" alt="">
+        </div>
+        <div class="sidebar-2">
+            <div class="category">
+                <div class="categ-title">INFO</div>
+                <div class="button">+</div>
+            </div>
+            <div class="categ-channels">
+                <div># new-videos</div>
+                <div># updates</div>
+                <div># faq</div>
+            </div>
+        </div>
+    </body>
+</html>

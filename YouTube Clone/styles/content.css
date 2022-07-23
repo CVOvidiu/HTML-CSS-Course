@@ -1,0 +1,139 @@
+.vds-wrapper {
+    display: grid;
+    gap: 1rem;
+}
+
+/* if the screen is bigger than 300/600/900/1200px make 1/2/3/4 columns */
+@media (min-width: 300px) {
+    .vds-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .vds-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .vds-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .vds-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.video-preview {
+    width: 300px;
+}
+
+.thumbnail-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.vd-thumbnail {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}   
+
+.thumbnail-wrapper div {
+    position: absolute;
+    color:white;
+    bottom: 10px;
+    right: 5px;
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    background-color: black;
+    padding: 3px;
+}
+
+.vid-details {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 5px;
+}
+
+.icon-wrapper {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 50px;
+}
+
+.icon-tooltip {
+    position: absolute;
+    height: 80px;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    bottom: -93px;
+    padding: 0 15px;
+    align-items: center;
+    min-width: 175px;
+    column-gap: 10px;
+    z-index: 2;
+}
+
+.icon-tooltip .icon {
+    height: 50px;
+    width: 50px;
+}
+
+.icon-wrapper:hover .icon-tooltip {
+    opacity: 1;
+}
+
+.icon-tooltip {
+    font-family: Roboto, Arial;
+}
+
+.icon-tooltip .profile-name {
+    font-weight: bold;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.icon-tooltip .profile-subs {
+    font-size: 13px;
+    color: rgb(100, 100, 100);
+}
+
+.video-info-grid {
+    font-family: Roboto, Arial;
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.video-auth {
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.video-auth, .video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
